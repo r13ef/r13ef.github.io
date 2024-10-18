@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
 .table {
     margin-left: 10%;
     margin-right: 10%;
@@ -45,9 +48,11 @@ nav ul li:hover {
     position: relative;
 }
 
+
 .child {
-    flex-grow: 4;
-    /* background-color: rgb(61, 61, 62); */
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
     margin: auto;
     text-align: center;
     font-size: 60px;
