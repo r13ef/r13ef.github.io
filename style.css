@@ -55,6 +55,11 @@ nav ul li:hover {
 
 .list-up {
     list-style-type: square;
+    line-height: 25px;
+}
+
+ol li {
+    margin-bottom: 10px;
 }
 
 ol li a {
