@@ -54,18 +54,6 @@ nav ul li:hover {
     font-size: 60px;
 }
 
-#home-parent {
-    display: flex;
-    min-height: 300px;
-    position: relative;
-}
-
-#home-child-title {
-    /* background-color: rgb(61, 61, 62); */
-    margin: auto;
-    text-align: center;
-    font-size: 60px;
-}
 
 
 .list-up {
