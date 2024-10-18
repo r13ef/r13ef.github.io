@@ -39,7 +39,6 @@ nav ul li:hover {
     border-color: black;
 }
 
-
 .parent {
     display: flex;
     min-height: 300px;
@@ -53,8 +52,6 @@ nav ul li:hover {
     text-align: center;
     font-size: 60px;
 }
-
-
 
 .list-up {
     list-style-type: square;
