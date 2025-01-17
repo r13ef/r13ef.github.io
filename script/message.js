@@ -1,0 +1,2 @@
+self_introduction = 'Hello world!! Nice to meet you, I am Hidetada Wachi. My hobby is walking. However, when I say "walking," it\'s not just a casual 1-hour stroll around the neighborhood. I walk for over 8 hours, covering a distance of 40 to 50 kilometers. Usually, I walk at a pace of about 5 km per hour, repeating a cycle of walking for 50 minutes and resting for 10 minutes. What I realized after walking this much is that cars are fast.'
+console.log(self_introduction)
