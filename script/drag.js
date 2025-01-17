@@ -60,19 +60,37 @@ box3.onpointermove = function (event) {
     }
 }
 
-function enlarge(x) {
-    console.log(x)
-    if (x.style.width) {
-        x.style.width = parseInt(x.style.width) + 2 + "px";
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+function change_direction(x) {
+    if (x.index) {
+        x.index *= -1;
+        x.style.backgroundColor = 'rgb(' + getRandomInt(256) + ' ' + getRandomInt(256) + ' ' + getRandomInt(256) + ')';
     } else {
-        x.style.width = "100px";
+        x.index = -1;
+        x.style.backgroundColor = 'rgb(' + getRandomInt(256) + ' ' + getRandomInt(256) + ' ' + getRandomInt(256) + ')';
+    }
+}
+
+
+function enlarge(x) {
+    if (!x.style.width || !x.style.height || !x.index) {
+        console.log(x.style.width, x.style.height, x.style.backgroundColor)
+        x.style.width = '100px';
+        x.style.height = '100px';
+        x.index = 1;
     }
 
-    if (x.style.height) {
+    if (parseInt(x.style.width) >= 100 && parseInt(x.style.width) >= 100) {
+        x.style.width = parseInt(x.style.width) + 2 * x.index + "px";
+        x.style.height = parseInt(x.style.height) + 2 * x.index + "px";
+    } else if (x.index == 1) {
+        x.style.width = parseInt(x.style.width) + 2 + "px";
         x.style.height = parseInt(x.style.height) + 2 + "px";
-    } else {
-        x.style.height = "100px";
     }
+
 
 
 }
