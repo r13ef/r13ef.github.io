@@ -71,16 +71,24 @@
             margin-left: 600px;
             margin-top: -50px;
         }
+
+        #circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: burlywood;
+            top: 200px;
+            left: 200px;
+        }
     </style>
 
+    <div id="circle" onmouseover="repeater=setInterval(enlarge,10,this);" onmouseout="clearInterval(repeater);"
+        onclick="this.style.height='100px';this.style.width='100px';">
+    </div>
     <div id="box1" class="object"></div>
-
     <div id="box2" class="object"></div>
-
     <div id="box3" class="object"></div>
-
-
-
 </body>
 
 <script src="script/drag.js"></script>
