@@ -1,0 +1,23 @@
+#problem {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+#title {
+    margin-left: 40px;
+}
+
+.button {
+    font-size: 16px;
+    margin: 5px;
+}
+
+#answer {
+    margin: 10px;
+}
+
+#comment {
+    border: 2px solid black;
+}
