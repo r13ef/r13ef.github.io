@@ -7,7 +7,7 @@ function computeResult() {
     const prime = 896165628569n
     var count = BigInt(num)
     var ans = 1n
-    var temp = BigInt(Math.floor(Math.random() * prime));
+    var temp = BigInt(Math.floor(Math.random() * 896165628568));
 
     while (count > 0) {
         if (count % 2n == 1n) {
