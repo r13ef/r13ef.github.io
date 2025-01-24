@@ -19,11 +19,27 @@
 <body>
     <div id="problem">
         <p>
-            Coming Soon!!
+            I take a prime P large enough and a natural number $KEY.
+            You can compute $KEY^(your input) mod P by following form.
+            The flag of this problem is: Wachi{THE_ANSWER_IS_$KEY}.
         </p>
 
 
         <script src="script/6edf980e7a904f067bd4672804046dbdd15ff3125d5afc9429214e2d7c947ca8.js"></script>
+
+        <style>
+            #compute {
+                margin: 10px;
+            }
+        </style>
+        <div id="input">
+            <p>Compute: </p>
+            <form name="compute">
+                <input name="num" type="text" size="30" />
+                <div id="result">= ????</div>
+            </form>
+            <button onclick="computeResult()" class="button">Submit</button>
+        </div>
 
         <div id="comment"></div>
         <div id="answer">
