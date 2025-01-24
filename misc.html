@@ -14,9 +14,9 @@
     <meta name="keywords" content="math, interaction, semigroup">
     <link rel="canonical" href="https://r13ef.github.io/misc.html" />
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="ctf/style.css" type="text/css">
     <link rel="icon" href="https://r13ef.github.io/image/favicon.ico">
 </head>
-
 
 
 <header>
@@ -36,16 +36,39 @@
         </ul>
     </nav>
 
+    <style>
+        .button {
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+
     <div class="table">
         <h2>
             Miscellaneous:
         </h2>
 
-        <script src="script/first_flag.js"></script>
-        <form name="answer">
-            <input name="flag" type="text" size="30" />
-            <button onclick="submit_answer()" class="button">Submit</button>
-        </form>
+
+        <div id="problem">
+            <p>
+                I have dropped my key in this page. Could you please help me find it?
+            </p>
+
+            <img src="img/broken_image.gif">
+
+
+            <script src="script/first_flag.js"></script>
+
+            <div id="comment"></div>
+            <div id="answer">
+                <p>Your answer: </p>
+                <form name="answer">
+                    <input name="flag" type="text" size="30" />
+                </form>
+                <button onclick="submit_answer()" class="button">Submit</button>
+            </div>
+        </div>
+
     </div>
 
     <style>

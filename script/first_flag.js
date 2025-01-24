@@ -7,7 +7,7 @@ function submit_answer() {
     digestAnswer(flag).then((digestFlag) => {
         if (digestFlag == hashedAnswer) {
             createNextURL(flag).then((nextUrl) => {
-                right(nextUrl);
+                document.location = "ctf/" + nextUrl;
             })
         } else {
             miss();
