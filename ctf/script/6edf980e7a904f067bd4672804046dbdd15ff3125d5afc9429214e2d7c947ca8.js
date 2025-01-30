@@ -1,4 +1,4 @@
-const hashedAnswer = "14a3d8aeb8ae74db2a2819462b7f1b414f4a52f2457f9163e69577f287c6d47454f8ed8aa45d251a4a94c987c667baca4dbbe9f093d2f3844465a44ce1382218"
+const hashedAnswer = "670ee22747b0bff47d8f658290063f1d7e039832cd8753f8f7320925e2e22aaa240ac9d580cdb5b82e3cd3c23a75f0ef23c05eb109c57679e2d0f77779be1b7b"
 
 function computeResult() {
     var flag = "Sorry, this is not the flag.";
@@ -13,6 +13,18 @@ function computeResult() {
             }
         }
         );
+    }
+}
+
+
+async function getData() {
+    const url = "https://r13ef.github.io/ctf/strage/f7bd616b6c841d2538735f76d1e02b57.txt";
+    try {
+        const response = await fetch(url);
+        const crypt = await response.body;
+        console.log(crypt);
+    } catch (error) {
+        console.error(error.message);
     }
 }
 
