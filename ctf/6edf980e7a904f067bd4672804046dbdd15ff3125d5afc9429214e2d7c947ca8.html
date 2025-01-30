@@ -22,7 +22,6 @@
             Find $KEY and complete the flag: Wachi{THE_ANSWER_IS_$KEY}.
         </p>
 
-
         <script src="script/6edf980e7a904f067bd4672804046dbdd15ff3125d5afc9429214e2d7c947ca8.js"></script>
 
         <style>
@@ -30,22 +29,11 @@
                 margin: 10px;
             }
         </style>
-        <div id="input">
-            <p>Compute: </p>
-            <form name="compute">
-                x = <input name="num" type="text" size="30" />
-                <div id="result">$KEY^x = ???? mod 896165628569</div>
-            </form>
-            <button onclick="computeResult()" class="button">Submit</button>
-        </div>
 
         <div id="comment"></div>
         <div id="answer">
-            <p>Your answer: </p>
-            <form name="answer">
-                <input name="flag" type="text" size="30" />
-            </form>
-            <!-- <button onclick="submit_answer()" class="button">Submit</button> -->
+            <p>You can </p>
+            <button onclick="computeResult()" class="button">Submit</button>
         </div>
     </div>
 </body>
