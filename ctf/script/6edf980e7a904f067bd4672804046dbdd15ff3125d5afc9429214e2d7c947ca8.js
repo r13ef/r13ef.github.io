@@ -1,23 +1,17 @@
-function getRandomInt() {
-    return
-}
+const hashedAnswer = "14a3d8aeb8ae74db2a2819462b7f1b414f4a52f2457f9163e69577f287c6d47454f8ed8aa45d251a4a94c987c667baca4dbbe9f093d2f3844465a44ce1382218"
 
 function computeResult() {
-    const num = document.forms.compute.elements.num.value;
-    const prime = 896165628569n
-    var count = BigInt(num)
-    var ans = 1n
-    var temp = BigInt(Math.floor(Math.random() * prime));
-
-    while (count > 0) {
-        if (count % 2n == 1n) {
-            ans = (ans * temp) % prime;
-            count = (count - 1n) / 2n;
-        } else {
-            count /= 2n;
+    var flag = "Sorry, this is not the flag.";
+    if (flag = "FLAG") {
+        digestAnswer(flag).then((digestFlag) => {
+            if (digestFlag == hashedAnswer) {
+                createNextURL(flag).then((nextUrl) => {
+                    right(nextUrl);
+                })
+            } else {
+                miss();
+            }
         }
-        temp = temp ** 2n % prime;
+        );
     }
-
-    document.getElementById("result").innerHTML = "$KEY^x = " + String(ans) + " mod 896165628569";
 }
