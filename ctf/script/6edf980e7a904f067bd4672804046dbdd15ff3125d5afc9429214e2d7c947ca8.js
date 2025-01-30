@@ -18,7 +18,7 @@ function computeResult() {
 
 
 async function getData() {
-    const url = "https://r13ef.github.io/ctf/strage/f7bd616b6c841d2538735f76d1e02b57.txt";
+    const url = "https://r13ef.github.io/ctf/strage/f7bd616b6c841d2538735f76d1e02b57.json";
     try {
         const response = await fetch(url);
         const crypt = await response.json();
