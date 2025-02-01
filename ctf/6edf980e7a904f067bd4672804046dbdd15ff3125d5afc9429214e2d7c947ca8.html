@@ -12,24 +12,31 @@
 
 <header>
     <div id="title">
-        <h1>Developed</h1>
+        <h1>Treasure Chest</h1>
     </div>
 </header>
 
 <body>
     <div id="problem">
         <p>
-            Click and Track!!
+            Here you are.
+            This is a <a href="/ctf/strage/treasure_chest.zip">gift</a> for you.
+            This .zip folder is encrypted by with the following password.
         </p>
-        <button onclick="getData()" class="button">Boom!!!</button>
+        <p>Password: 5ebe2294ecd0e0f08eab7690d2a6ee69</p>
+        <p>
+            Sorry, I am a prankster, so the password is encoded in md5.
+        </p>
 
         <script src="script/6edf980e7a904f067bd4672804046dbdd15ff3125d5afc9429214e2d7c947ca8.js"></script>
 
-
         <div id="comment"></div>
         <div id="answer">
-            <p>All you can do is push a button.</p>
-            <button onclick="computeResult()" class="button">Submit</button>
+            <p>Your answer: </p>
+            <form name="answer">
+                <input name="flag" type="text" size="30" />
+            </form>
+            <button onclick="submit_answer()" class="button">Submit</button>
         </div>
     </div>
 </body>
