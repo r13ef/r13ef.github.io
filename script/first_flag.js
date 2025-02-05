@@ -10,7 +10,9 @@ function submit_answer() {
                 document.location = "ctf/" + nextUrl + ".html";
             })
         } else {
-            miss();
+            element = document.getElementById('comment');
+            element.innerHTML = '<font color="red">Unfortunately, your answer is not correct.</font>';
+            element.style.padding = "10px";
         }
     }
     );
